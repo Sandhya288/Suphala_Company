@@ -1,0 +1,680 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+   
+}
+.AppHeader .icon{
+    z-index: 1;
+}
+.AppHeader{
+    background-color: rgba(4, 68, 4, 0.712);
+  
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px 4px 12px;
+    z-index: 2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.AppFooter{
+height: 50px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+
+}
+
+/* Add this CSS to your stylesheet or component */
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-selected, .ant-menu-dark .ant-menu-item-active {
+    color: white !important;
+  }
+  
+  .ant-menu-dark .ant-menu-item-selected::after {
+    border-right-color: white !important;
+  }
+  
+.SideMenuAndPageContent{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+  
+   
+}
+.SideMenu{
+    height: 100%; 
+    position: fixed;
+    color: #ffffff;
+
+}
+.SideMenuVertical{
+    height: 100vh;
+    width: 250px;
+    color: #ffffff;
+    
+    background-color: rgba(4, 68, 4, 0.712);
+    font-weight: 100px;
+}
+@media screen and (max-width: 768px) {
+    .SideMenu {
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  
+    .SideMenuVertical {
+      width: auto; /* Adjust width for smaller screens */
+    }
+  
+    /* You can add more specific styles for smaller screens if needed */
+  }
+
+
+/* CSS for MyComponent */
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .background-container {
+ 
+    display: flex;
+    margin-top: 20px;
+    height: 100vh;
+    margin-bottom: 200px;
+    width: 80%;
+    margin-left: 250px;
+    
+  }
+
+  .background-container5 {
+ 
+    display: flex;
+    margin-top: 20px;
+    height: 100vh;
+    margin-bottom: 200px;
+    width: 80%;
+    margin-left: 180px;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .sub-material-section,
+    .quantity-section {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .button-section,
+    .submit-section1 {
+      margin-left: auto;
+    }
+  
+    .display-section {
+      margin-top: 15px;
+    }
+  }
+  
+  /* Header styles */
+ 
+  
+  /* Date section styles */
+  .date-section,
+  .material-section,
+  .button-section {
+    margin-bottom: 20px;
+    width: 20px;
+  
+  }
+  
+  .date-section label,
+  .material-section label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    
+     margin-left: 30px;
+    color: #000000;
+  }
+  
+  .date-section input,
+  .material-section select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    width: 300px;
+    border: 1px solid #ccc;
+  }
+  
+
+  .button-section {
+    flex: 1;
+    text-align: right; /* Align button to the right */
+  }
+  
+  .submit-section1 {
+    text-align: right; /* Align button to the right */
+  }
+  
+  /* Button section styles */
+  .button-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color:rgba(4, 68, 4, 0.712);
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .button-section button:last-child {
+    margin-left: 50px;
+  }
+  
+  .button-section button:hover {
+    background-color:  rgba(4, 68, 4, 0.712);
+  }
+  .container {
+   
+    border-radius: 8px;
+   
+    margin: 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    height: 100vh; /* Set the height as per your requirement */
+  overflow-y: auto; 
+    
+  padding-left: 15px;
+    width: 100%;
+   
+   
+    padding-right: 85px;
+  
+
+  /* Add this line to center the container horizontally */
+  }
+
+  .container2 {
+ 
+    border-radius: 8px;
+    margin-right: 50px;
+    margin: 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:15px;
+    margin-top: 10px;
+    margin-left: auto;
+   
+    width: 90%;
+    height: 80%;
+   
+    padding-right: 300px;
+   
+   
+  /* Add this line to center the container horizontally */
+  }
+
+  .button-section {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+  }
+
+  /* CSS for Add Employee and Delete Employee buttons */
+.add-employee-button {
+    margin-left: 10px;
+  }
+  
+
+  .background-container3 {
+    background-color: #8fd3fe;
+    height: 100vh; /* Set the height to 90% of the viewport height */
+    width: 15vw; /* Set the width to 90% of the viewport width */
+    margin: 15px 20px; /* Center the container vertically */
+    padding: 10px; /* Add padding for content */
+    background-color:#badda0; /* Set background color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(148, 140, 140, 0.1); /* Add box shadow for depth */
+    margin-right: 20px;
+    margin-left: 250px;
+  }
+
+  .background-container4 {
+    height: 100vh; /* Set the height to 90% of the viewport height */
+    width: 83vw; /* Set the width to 90% of the viewport width */
+    margin: 15px 20px; /* Center the container vertically */
+    padding: 35px; /* Add padding for content */
+   /* Set background color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(148, 140, 140, 0.1); /* Add box shadow for depth */
+    margin-right: 20px;
+    margin-left: 250px;
+  }
+
+
+
+  
+  .delete-employee-button {
+    margin-bottom: 500px;
+    margin-left: 40px;
+    background-color: rgb(224, 80, 80);
+  }
+
+  .submit-button4{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: 40px;
+  margin-top: 40px;
+  align-self: flex-end; 
+}
+  
+  
+  .spacer {
+    width: 75px; /* Adjust spacing width as needed */
+  }
+  
+  /*HOME 
+
+  /* LoginForm.css */
+/* Base styles */
+/* Base styles */
+.login-form-container {
+    margin-left: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+
+  
+  .btn_rrr {
+    background-color: rgb(22, 22, 151);
+    color: white;
+    padding: 10px 20px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    border: none;
+    margin-left: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  .btn_rrr:hover {
+    background-color: rgb(34, 34, 139);
+  }
+  
+  .login-form {
+    padding: 40px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Increased border radius */
+    background-color:#B7E892;
+    padding: 50px;
+    max-width: 500px; /* Added max-width to prevent form from stretching too wide */
+    width: 100%; /* Added width to make the form fill its container */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .login-form h2 {
+    margin-bottom: 30px; /* Increased margin */
+    text-align: center;
+    font-size: 24px; /* Increased font size */
+  }
+  
+  .input-group {
+    margin-bottom: 30px; /* Increased margin */
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin */
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 30px; /* Increased padding */
+    background-color:rgba(4, 68, 4, 0.712);
+    color: #fff;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .button:hover {
+    background-color: rgba(4, 68, 4, 0.712);
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .login-form-container {
+      margin-left: 30px;
+    }
+  }
+  
+
+  .scrollable-container {
+    height: 100vh; /* Set the height as per your requirement */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+
+  .header {
+   border-radius: 5px;
+    margin-top: 20px;
+    width: 80vw;
+    height: 40px;
+  
+     background-color: rgba(4, 68, 4, 0.712);
+   }
+   
+   .bulb-heading-section{
+   font-style: normal;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 70px;
+ 
+
+   }
+   .header h1 {
+    font-style: normal;
+     color: #ffffff;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-bottom: 70px;
+  
+   }
+  
+  .row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date-section,
+  .material-section,
+  .batch-section{
+    margin-left: 10px;
+    width:100%;
+   /* Adjusted width for side-by-side layout */
+  }
+  
+  .sub-material-section,
+  .quantity-section {
+    width: 100%; 
+    /* Adjusted width for side-by-side layout */
+  }
+
+  
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .button-container,
+  .submit-container {
+    margin-left: auto;
+  }
+  
+  .button-container button,
+  .submit-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 40px;
+    background-color: rgba(4, 68, 4, 0.712);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover,
+  .submit-container button:hover {
+    background-color: rgba(4, 68, 4, 0.712);
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    width: 300px;
+  }
+  
+  .display-section p {
+    margin: 5px 0;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 50px; /* Adjust padding for smaller screens */
+    }
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 50px; /* Adjust padding for smaller screens */
+    }
+  }
+
+  /*view Stock*/
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .view {
+      margin-left: 10px;
+    }
+    
+    .datee {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .add-employee-button,
+    .delete-employee-button {
+      margin-top: 10px;
+    }
+    
+    .table-container {
+      overflow-x: auto;
+    }
+    
+    .veee {
+      margin-left: 10px;
+    }
+  }
+  
+  /* Additional styling for smaller screens */
+  @media screen and (max-width: 480px) {
+    .veee {
+      font-size: 20px;
+    }
+  }
+  
+  /* CSS for the table */
+.ant-table {
+    width: 100%; /* Adjust the width of the table */
+   
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  }
+  
+  .ant-table th,
+  .ant-table td {
+    border: 1px solid #ddd;
+    padding: 30px 40px;
+  }
+  
+  .ant-table th {
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+    text-align: left;
+  }
+  
+  .ant-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .ant-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .table-container {
+border-color: #000000;
+ margin-bottom: 20px;
+    display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+ margin-left: auto;
+ max-width: 100%;
+  height: 100%; 
+  width: 80%;/* Adjust maximum width as needed */
+  }
+  @media screen and (max-width: 768px) {
+    .table-container
+    {
+      width: 100%;
+    }
+  }
+
+ 
+  
+  .view{
+   margin-left: 10px;
+   font-size: 25px;
+    margin-top: 5px;
+    margin-left: 200px;
+
+   
+  }
+
+  .veee{
+   
+    font-size: 42px; 
+    margin-left: 30px;
+    margin-bottom: 10px; 
+  }
+
+  .background-container2 {
+  
+    /* Set your desired background color */
+   
+    margin-left: 300px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+   overflow-y: auto;
+   
+   margin: 15px 15px;
+    border-radius: 10px;
+  } /* Add some border radius for styling */
+  
+  .datee{
+    margin-left: 70px;
+    border: 1px solid black;
+
+  }
+
+  /*PRODUCTION*/
+  /* Add this CSS to your existing stylesheet */
+
+/* Batch section */
+.batch-section ,
+.date-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label for batch number */
+  .batch-section,
+  .date-section .label {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+  
+  .spacer1{
+    width: 20px;
+  }
+  /* Input field for batch number */
+  .batch-section input[type="text"] {
+    padding: 10px;
+   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px; /* Adjust width as needed */
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+  
+  /* Add spacing between batch section and other sections */
+  .batch-section,
+  .material-section,
+  .date-section {
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+  
+ /* Add this CSS to your existing stylesheet */
+
+/* Submit button */
+.submit-container3 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:rgba(4, 68, 4, 0.712); /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border: none;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-container3 button:hover {
+    background-color:rgba(22, 51, 22, 0.712); /* Change the hover background color as needed */
+  }
+  .show{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color:rgba(4, 68, 4, 0.712); /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+ .show button:hover {
+    background-color:rgba(22, 51, 22, 0.712); /* Change the hover background color as needed */
+  }
